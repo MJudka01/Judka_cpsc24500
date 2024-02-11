@@ -1,6 +1,6 @@
 /*
 Marek Judka
-CPSC 24500
+CPSC 24500-001
 Assignment 2: Tax Calculator
 2-11-24
  */
@@ -17,10 +17,14 @@ public class taxCalculator
         String name;
         boolean valid = true;
 
+        //User inputting their name
         System.out.print("Enter name: ");
         name = sc.next();
         System.out.println(" ");
 
+        /*While loop to ask user to input valid input if they
+        originally enter invalid input
+         */
         while (valid)
         {
             System.out.print("Enter income: ");
@@ -37,6 +41,7 @@ public class taxCalculator
             }
         }
 
+        //if statements to calculate income tax based on users income input
         if (income < 4000)
         {
             tax = 0;
