@@ -8,7 +8,7 @@ Assignment 3: Rock, Paper, and Scissors
 import java.util.Scanner;
 import java.util.Random;
 
-public class rockPaperScissors
+public class RockPaperScissors
 {
     //Method to get the users choice
     public static int userChoice ()
