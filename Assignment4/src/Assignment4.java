@@ -20,8 +20,11 @@ public class Assignment4
      * @return number of lines in a text file
      * @throws Exception
      */
+<<<<<<< HEAD
 
     //gets numbers of lines
+=======
+>>>>>>> origin/assignments
     public static int getNoLines(String filename) throws Exception{
         try (Stream<String> fileStream = Files.lines(Paths.get(filename))) {
             return (int) fileStream.count();
@@ -35,10 +38,15 @@ public class Assignment4
      * the length of each row depends on the number of values in each line of the file.
      * @throws Exception
      */
+<<<<<<< HEAD
     //creates the array
     public static int[][] create2DArray(String filename) throws Exception
     {
         //reading file
+=======
+    public static int[][] create2DArray(String filename) throws Exception
+    {
+>>>>>>> origin/assignments
         try (Scanner scanner = new Scanner(new File(filename)))
         {
             int numOfLines = getNoLines(filename);
@@ -47,10 +55,15 @@ public class Assignment4
             while (scanner.hasNextLine())
             {
                 String line = scanner.nextLine();
+<<<<<<< HEAD
                 //splitting lines
                 String[] numbers = line.split(" ");
                 int[] row = new int[numbers.length];
                 //filling array
+=======
+                String[] numbers = line.split(" ");
+                int[] row = new int[numbers.length];
+>>>>>>> origin/assignments
                 for (int i = 0; i < numbers.length; i++)
                 {
                     row[i] = Integer.parseInt(numbers[i]);
@@ -62,7 +75,10 @@ public class Assignment4
     }
 
 
+<<<<<<< HEAD
     //finding longest row
+=======
+>>>>>>> origin/assignments
     public static int findLongestRow(int[][] arr)
     {
         int longestRow = 0;
@@ -79,7 +95,10 @@ public class Assignment4
     }
 
 
+<<<<<<< HEAD
     //finding largest value in the row
+=======
+>>>>>>> origin/assignments
     public static int findMaxInRow(int[][] arr, int rowIndex)
     {
         int max = Integer.MIN_VALUE;
@@ -94,7 +113,10 @@ public class Assignment4
     }
 
 
+<<<<<<< HEAD
     //finding the max value
+=======
+>>>>>>> origin/assignments
     public static int findMax(int[][] arr)
     {
         int max = Integer.MIN_VALUE;
